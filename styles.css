@@ -1,0 +1,138 @@
+.banner {
+    position: relative;
+}
+.banner img { /*dark side image */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;
+    border: 3px solid black; 
+    border-radius: 15px;
+}
+.head { /* gif */
+    float: right;
+    /* padding-bottom: 4%;
+    padding-right: 5%;
+    padding-top: 2%;  */
+    size: 200%;
+    border: 4px solid whitesmoke;
+}
+.banner .welcome { /* join us inquisitor */
+    position:absolute;
+    top: 40%;
+    left: 7%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+h1{ /* welcome to the dark side */
+    float: left;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: sans-serif;
+    color: white;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+h2, p, ul, label{ /* all text */
+    color: white;
+    font-family: sans-serif;
+}
+span{
+    font-size: 65px;
+    font-weight: 10000;
+    color: yellow;
+}
+header {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+}
+.info {
+    border: 4px solid yellow;
+    border-spacing: 2%;
+    padding: 1%;
+    margin: auto;
+    font-size: 20px;
+}
+.main-nav li {
+    display: inline-block;
+    border: 3px solid yellow;
+    /* padding: 10px; */
+    margin: 3%;
+    font-size: 18px;
+    background-color: white;
+    width: fit-content;
+    text-decoration: none;  
+    border: 6px solid transparent;
+}
+a {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+}
+.images li {
+    display: inline-block;
+    border: 3px solid yellow;
+    padding: 10px;
+    letter-spacing: 10%;
+    margin: 3%;
+    font-size: 18px;
+    background-color: white;
+    width: fit-content;
+}
+.pose {
+    font-size: 30px;
+    font-weight: bolder;
+    color: brown;
+    text-align: center;
+}
+.join {
+    text-align: center;
+    font-size: 18px;
+    background-color: #16161a;
+    margin: 10px;
+    padding: 10px;
+}
+.copyright {
+    text-align: center;
+    color: wheat;
+    font-size: 12px;
+}
+form input {
+    margin: 2%;
+    border: 5px solid white;
+    font-size: 22px;
+}
+/* psuedo classes */
+nav li a:hover {
+    text-decoration: solid;
+    background-color: brown;
+}
+.images li:hover {
+    position: relative;
+    top: -10px;
+}
+/* responsive styles */
+@media screen and(max-width: 1400px){
+    .banner .welcome { /* join us inquisitor */
+        position:absolute;
+        top: 40%;
+        left: 7%;
+        color: white;
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+@media screen and(max-width: 1200px) {
+    .images li {
+        width: 300px;
+    }
+}
